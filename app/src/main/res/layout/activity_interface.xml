@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Maco.AppBarOverlay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradiant_color"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="200px"
+            app:srcCompat="@drawable/logomoon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="80px"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginStart="50px"
+                android:layout_marginLeft="50px"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/google" />
+
+            <Button
+                android:id="@+id/GoogleLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50px"
+                android:layout_marginLeft="50px"
+                android:layout_marginEnd="50px"
+                android:layout_marginRight="50px"
+                android:background="#FFFFFF"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:isScrollContainer="false"
+                android:text="Se Connecter avec Google"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="300px"
+                app:iconGravity="textStart"
+                app:iconSize="50px"
+                app:strokeColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginStart="50px"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="20px"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/face" />
+
+            <Button
+                android:id="@+id/googleLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50px"
+                android:layout_marginLeft="50px"
+                android:layout_marginEnd="50px"
+                android:layout_marginRight="50px"
+                android:background="#FFFFFF"
+                android:isScrollContainer="false"
+                android:text="Se Connecter avec Facebook"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="8px"
+                app:iconGravity="textStart"
+                app:iconSize="50px"
+                app:strokeColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="80px"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50px"
+                android:layout_marginLeft="50px"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/tel" />
+
+            <Button
+                android:id="@+id/googleLogin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50px"
+                android:layout_marginRight="50px"
+                android:background="#FFFFFF"
+                android:isScrollContainer="false"
+                android:text="Se Connecter avec Phone Number"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="8px"
+                app:iconGravity="textStart"
+                app:iconSize="50px"
+                app:strokeColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
